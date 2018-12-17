@@ -20,12 +20,6 @@ public class FrontEndGarbo {
 		}
         inF.close();
 	}
-	
-	public void setWindowLocations(JFrame window, JPanel panel) {
-		window.setContentPane(panel);
-		window.setSize(310, 125);
-		window.setLocationByPlatform(true);
-	}
 	public void startWindow(ArrayList<Question> questions) {
 		
 		JFrame window = new JFrame();
@@ -89,15 +83,12 @@ public class FrontEndGarbo {
 		{
 		  public void actionPerformed(ActionEvent e)
 		  {
+			  first1.setVisible(false);
 			  myPanel.setVisible(false);
-			  JPanel questionPanel = beg.questionPanel(questions,"AP Java", 100);
+			  JPanel questionPanel = beg.questionPanel(questions,"AP Java", 100, myPanel, window);
 			  window.add(questionPanel);
 			  questionPanel.setVisible(true);
-			  
-			  setWindowLocations(window, questionPanel);
-			  
-			  window.setVisible(true);
-			  //myPanel.setVisible(true);
+			  questionPanel.setLayout(new GridLayout(5,1));			  
 		  }
 		});
 		first2.addActionListener(new ActionListener()
@@ -105,6 +96,11 @@ public class FrontEndGarbo {
 		  public void actionPerformed(ActionEvent e)
 		  {
 		    first2.setVisible(false);
+		    myPanel.setVisible(false);
+			JPanel questionPanel = beg.questionPanel(questions,"AP Java", 200, myPanel, window);
+			window.add(questionPanel);
+			questionPanel.setVisible(true);
+			questionPanel.setLayout(new GridLayout(5,1));		
 		  }
 		});
 		first3.addActionListener(new ActionListener()
@@ -112,6 +108,11 @@ public class FrontEndGarbo {
 		  public void actionPerformed(ActionEvent e)
 		  {
 		    first3.setVisible(false);
+		    myPanel.setVisible(false);
+			JPanel questionPanel = beg.questionPanel(questions,"AP Java", 300, myPanel, window);
+			window.add(questionPanel);
+			questionPanel.setVisible(true);
+			questionPanel.setLayout(new GridLayout(5,1));		
 		  }
 		});
 		first4.addActionListener(new ActionListener()
@@ -119,6 +120,11 @@ public class FrontEndGarbo {
 		  public void actionPerformed(ActionEvent e)
 		  {
 		    first4.setVisible(false);
+		    myPanel.setVisible(false);
+			JPanel questionPanel = beg.questionPanel(questions,"AP Java", 400, myPanel, window);
+			window.add(questionPanel);
+			questionPanel.setVisible(true);
+			questionPanel.setLayout(new GridLayout(5,1));		
 		  }
 		});
 		second1.addActionListener(new ActionListener()
@@ -126,6 +132,11 @@ public class FrontEndGarbo {
 		  public void actionPerformed(ActionEvent e)
 		  {
 		    second1.setVisible(false);
+		    myPanel.setVisible(false);
+			JPanel questionPanel = beg.questionPanel(questions,"Pokemon", 100, myPanel, window);
+			window.add(questionPanel);
+			questionPanel.setVisible(true);
+			questionPanel.setLayout(new GridLayout(5,1));		
 		  }
 		});
 		second2.addActionListener(new ActionListener()
@@ -133,6 +144,11 @@ public class FrontEndGarbo {
 		  public void actionPerformed(ActionEvent e)
 		  {
 		    second2.setVisible(false);
+		    myPanel.setVisible(false);
+			JPanel questionPanel = beg.questionPanel(questions,"Pokemon", 100, myPanel, window);
+			window.add(questionPanel);
+			questionPanel.setVisible(true);
+			questionPanel.setLayout(new GridLayout(5,1));		
 		  }
 		});
 		second3.addActionListener(new ActionListener()
@@ -140,6 +156,11 @@ public class FrontEndGarbo {
 		  public void actionPerformed(ActionEvent e)
 		  {
 		    second3.setVisible(false);
+		    myPanel.setVisible(false);
+			JPanel questionPanel = beg.questionPanel(questions,"Pokemon", 100, myPanel, window);
+			window.add(questionPanel);
+			questionPanel.setVisible(true);
+			questionPanel.setLayout(new GridLayout(5,1));		
 		  }
 		});
 		second4.addActionListener(new ActionListener()
@@ -147,6 +168,11 @@ public class FrontEndGarbo {
 		  public void actionPerformed(ActionEvent e)
 		  {
 		    second4.setVisible(false);
+		    myPanel.setVisible(false);
+			JPanel questionPanel = beg.questionPanel(questions,"Pokemon", 100, myPanel, window);
+			window.add(questionPanel);
+			questionPanel.setVisible(true);
+			questionPanel.setLayout(new GridLayout(5,1));		
 		  }
 		});
 		third1.addActionListener(new ActionListener()
@@ -155,6 +181,11 @@ public class FrontEndGarbo {
 		  {
 			
 		    third1.setVisible(false);
+		    myPanel.setVisible(false);
+			JPanel questionPanel = beg.questionPanel(questions,"Oranges", 100, myPanel, window);
+			window.add(questionPanel);
+			questionPanel.setVisible(true);
+			questionPanel.setLayout(new GridLayout(5,1));		
 		  }
 		});
 		third2.addActionListener(new ActionListener()
@@ -162,6 +193,11 @@ public class FrontEndGarbo {
 		  public void actionPerformed(ActionEvent e)
 		  {
 		    third2.setVisible(false);
+		    myPanel.setVisible(false);
+			JPanel questionPanel = beg.questionPanel(questions,"Oranges", 100, myPanel, window);
+			window.add(questionPanel);
+			questionPanel.setVisible(true);
+			questionPanel.setLayout(new GridLayout(5,1));		
 		  }
 		});
 		third3.addActionListener(new ActionListener()
@@ -169,6 +205,11 @@ public class FrontEndGarbo {
 		  public void actionPerformed(ActionEvent e)
 		  {
 		    third3.setVisible(false);
+		    myPanel.setVisible(false);
+			JPanel questionPanel = beg.questionPanel(questions,"Oranges", 100, myPanel, window);
+			window.add(questionPanel);
+			questionPanel.setVisible(true);
+			questionPanel.setLayout(new GridLayout(5,1));		
 		  }
 		});
 		third4.addActionListener(new ActionListener()
@@ -176,6 +217,11 @@ public class FrontEndGarbo {
 		  public void actionPerformed(ActionEvent e)
 		  {
 		    third4.setVisible(false);
+		    myPanel.setVisible(false);
+			JPanel questionPanel = beg.questionPanel(questions,"Oranges", 100, myPanel, window);
+			window.add(questionPanel);
+			questionPanel.setVisible(true);
+			questionPanel.setLayout(new GridLayout(5,1));		
 		  }
 		});
 		fourth1.addActionListener(new ActionListener()
@@ -183,6 +229,11 @@ public class FrontEndGarbo {
 		  public void actionPerformed(ActionEvent e)
 		  {
 		    fourth1.setVisible(false);
+		    myPanel.setVisible(false);
+			JPanel questionPanel = beg.questionPanel(questions,"Minecraft", 100, myPanel, window);
+			window.add(questionPanel);
+			questionPanel.setVisible(true);
+			questionPanel.setLayout(new GridLayout(5,1));		
 		  }
 		});
 		fourth2.addActionListener(new ActionListener()
@@ -190,6 +241,11 @@ public class FrontEndGarbo {
 		  public void actionPerformed(ActionEvent e)
 		  {
 		    fourth2.setVisible(false);
+		    myPanel.setVisible(false);
+			JPanel questionPanel = beg.questionPanel(questions,"Minecraft", 100, myPanel, window);
+			window.add(questionPanel);
+			questionPanel.setVisible(true);
+			questionPanel.setLayout(new GridLayout(5,1));		
 		  }
 		});
 		fourth3.addActionListener(new ActionListener()
@@ -197,6 +253,11 @@ public class FrontEndGarbo {
 		  public void actionPerformed(ActionEvent e)
 		  {
 		    fourth3.setVisible(false);
+		    myPanel.setVisible(false);
+			JPanel questionPanel = beg.questionPanel(questions,"Minecraft", 100, myPanel, window);
+			window.add(questionPanel);
+			questionPanel.setVisible(true);
+			questionPanel.setLayout(new GridLayout(5,1));		
 		  }
 		});
 		fourth4.addActionListener(new ActionListener()
@@ -204,6 +265,11 @@ public class FrontEndGarbo {
 		  public void actionPerformed(ActionEvent e)
 		  {
 			  fourth4.setVisible(false);
+			  myPanel.setVisible(false);
+			  JPanel questionPanel = beg.questionPanel(questions,"Minecraft", 100, myPanel, window);
+			  window.add(questionPanel);
+			  questionPanel.setVisible(true);
+			  questionPanel.setLayout(new GridLayout(5,1));		
 		  }
 		});
 	}
